@@ -20,10 +20,19 @@
 var lat = 48.852969;
 var lon = 2.349903;
 var villes = { // seules les villes ajoutées dans ce tableau sont affichées sur la carte
-  "Paris": { "lat": 48.852969, "lon": 2.349903 },
-  "Brest": { "lat": 48.383, "lon": -4.500 },
-  "Quimper": { "lat": 48.000, "lon": -4.100 },
-  "Bayonne": { "lat": 43.500, "lon": -1.467 }
+    "Paris": { "lat": 48.852969, "lon": 2.349903 },
+    "Brest": { "lat": 48.383, "lon": -4.500 },
+    "Quimper": { "lat": 48.000, "lon": -4.100 },
+    "Bayonne": { "lat": 43.500, "lon": -1.467 },
+    "Lyon":{ "lat": 45.75, "lon": 4.85},
+    "Locon":{"lat": 50.540, "lon": 2.650},
+    "Canberra":{"lat": -35.282, "lon": 149.129},
+    "Lille":{"lat": 50.629, "lon": 3.057},
+    /*
+    "Mathilde":{},
+    "Khamis":{},*/
+    "Dublin":{"lat": 53.333, "lon": -6.249},
+    "Varsovie":{ "lat": 52.230, "lon": 21.012}
 };
 
 window.onload = function(){
@@ -51,7 +60,7 @@ window.onload = function(){
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Paris</div>
+            <div class="card-title h5">Paris Florian S</div>
             <div class="card-subtitle text-gray">Capitale</div>
           </div>
           <div class="card-image">
@@ -69,15 +78,15 @@ window.onload = function(){
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Brest</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Brest </div>
+            <div class="card-subtitle text-gray">Métropole</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="Brest.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Brest est une commune française <br/>, chef-lieu d'arrondissement du <br/> département du Finistère dans la <br/> région Bretagne.
           </div>
         </div>
       </div>
@@ -87,15 +96,15 @@ window.onload = function(){
           <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
                  la ville Afonctionne -->
           <div class="card-header">
-            <div class="card-title h5">Quimper</div>
-            <div class="card-subtitle text-gray">Capitale</div>
+            <div class="card-title h5">Quimper Loïc </div>
+            <div class="card-subtitle text-gray">Commune en France</div>
           </div>
           <div class="card-image">
             <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+            <img src="https://www.securitasdirect.fr/sites/default/files/alarme-quimper-securitas-direct.jpg" class="img-responsive">
           </div>
           <div class="card-body bg-secondary text-dark">
-            Insérez description...
+            Quimper, est une commune française de<br> la région Bretagne. 
           </div>
         </div>
       </div>
@@ -117,7 +126,150 @@ window.onload = function(){
           </div>
         </div>
       </div>
-
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Varsovie</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            depuis 1596 la capitale de la Pologne 
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Lyon</div>
+            <div class="card-subtitle text-gray">France</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="http://bonjour-lyon.fr/wp-content/uploads/2018/01/terreaux-bonjour-lyon-300x200.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Lyon, ville française de la région <br/> historique Rhône-Alpes...
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Locon </div>
+            <div class="card-subtitle text-gray">Village</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Locon_-_Mairie_et_salle_des_f%C3%AAtes.JPG/280px-Locon_-_Mairie_et_salle_des_f%C3%AAtes.JPG" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            C'est mon petit village à moi !
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Lille</div>
+            <div class="card-subtitle text-gray">Paris</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="lille.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Commune de 232 440 habitants <br/>intra-muros au dernier recensement de <br/>2016, Lille forme, aux côtés de Roubaix,<br/> Tourcoing, Villeneuve-d'Ascq et 86 <br/>autres communes, la Métropole<br/> européenne de Lille, qui compte <br/>1 139 929 habitants au 1er janvier<br/> 20141.
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Canberra </div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="http://networkprospect.com.au/wp-content/uploads/2016/05/Parliament-House-Canberra.jpg" class="img-responsive" width="320" height="200">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Canberra /kanbɛʁa/ est la capitale de <br/> l'Australie et du Territoire de la capitale <br/>australienne. La ville est située à <br/> l'extrémité sud du territoire de la <br/>capitale, à 280 kilomètres au sud-ouest <br/>de Sydney et à 680 km au nord-est de <br/>Melbourne
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Autre ville Mathilde </div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5">Autre ville Khamis</div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/320px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Insérez description...
+          </div>
+        </div>
+      </div>
+        
+        <div class="column col-auto">
+        <div id="ville_Paris" class="card bg-dark m-2">
+          <!--  l'id de la forme ville_A est nécessaire pour que le lien vers
+                 la ville Afonctionne -->
+          <div class="card-header">
+            <div class="card-title h5"> Dublin </div>
+            <div class="card-subtitle text-gray">Capitale</div>
+          </div>
+          <div class="card-image">
+            <!-- Utilisez de préférence des images de taille identique partout (ici : 320x200)-->
+            <img src="Dublin2.jpg" class="img-responsive">
+          </div>
+          <div class="card-body bg-secondary text-dark">
+            Dublin, capitale de l'Irlande, est située <br/>sur la côte est de l'Irlande à <br/>l'embouchure de la rivière<br/> Liffey.
+          </div>
+        </div>
+      </div>
     </div>
 
     <p class="footer bg-secondary text-center">
